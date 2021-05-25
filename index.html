@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+	<!-- CSS Styles -->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Karla&display=swap" rel="stylesheet">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/8d01fb2593.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-color: blanchedalmond;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- atoms -->
+  <div class="mx-3 my-3">
+    <h1>Atoms</h1>
+    <div class="mb-5">
+      <h3>Buttons</h3>
+      <div class="mb-3">
+        <h5>Buttons - active</h5>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>  
+      </div>
+
+      <div class="mb-3">
+        <h5>Buttons - disabled</h5>
+        <button type="button" class="btn btn-primary disabled">Primary</button>
+        <button type="button" class="btn btn-secondary disabled">Secondary</button>
+        <button type="button" class="btn btn-success disabled">Success</button>
+        <button type="button" class="btn btn-info disabled">Info</button>
+        <button type="button" class="btn btn-warning disabled">Warning</button>
+        <button type="button" class="btn btn-danger disabled">Danger</button>
+        <button type="button" class="btn btn-light disabled">Light</button>
+        <button type="button" class="btn btn-dark disabled">Dark</button>
+        <button type="button" class="btn btn-link disabled">Link</button>
+      </div>
+
+      <div class="mb-3">
+        <h5>Buttons - outline</h5>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+      </div>
+
+      <div class="mb-3">
+        <h5>Dropdown buttons</h5>
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-success">Success</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-info">Info</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-danger">Danger</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop4" style="">
+              <a class="dropdown-item" href="#">Dropdown link</a>
+              <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="mb-3">
+        <h5>Buttons - size</h5>
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-primary">Default button</button>
+        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <h3>Typography</h3>
+      <div>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <h3>
+          Heading
+          <small class="text-muted">with muted text</small>
+        </h3>
+        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <h3>Forms</h3>
+      <div>
+        <form>
+          <fieldset>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <div class="form-group mb-3">
+              <label for="formFile" class="form-label mt-4">Default file input example</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <h3>Navbar</h3>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>  
+    
+    </div>
+
+    <div class="mb-5">
+      <h3>Cards</h3>
+      <h3>Card 1</h3>
+      <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Event date</div>
+        <div class="card-img">
+          <img class="card-img-top" src="https://media.istockphoto.com/vectors/invitation-template-vector-id492366355?k=6&m=492366355&s=612x612&w=0&h=OR9BrmNpTARoT155A41Vd-u3SE6AWxznO8GZ14LkhGA=" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Event title</h4>
+          <p class="card-text pb-2">Quick description about the event</p>
+            <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    
+      <h3>Card 2</h3>
+      <div class="card w-100">
+        <div class="card-body card-user">
+          <div>
+            <img class="card-user-img" src="https://media.istockphoto.com/vectors/young-male-character-embracing-their-knees-emotional-stress-mental-vector-id1220054626?k=6&m=1220054626&s=612x612&w=0&h=BrBeu3DisW07U2543DvvlaPxGXsfRC8brY2L0bePQxk=">
+          </div>
+          <div>
+            <h5 class="card-title">@username</h5>
+            <p class="card-text">Username bio: with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+    
+      <h3 class="mt-3">Card 3</h3>
+      <div class="card w-25">
+        <div class="card-body">
+          <h5 class="card-title">City</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="mb-5">
+        <h3>List</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small>3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small>Donec id elit non mi porta.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-muted">3 days ago</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            <small class="text-muted">Donec id elit non mi porta.</small>
+          </a>
+        </div>
+      </div>
+      
+    
+    </div>
+
+
+  </div>
+
+  <!-- Links -->
+  <div class="mx-3 my-3">
+    <h1>Links</h1>
+    <ul>
+      <li><a href="navbar.html">Navbar</a></li>
+      <li><a href="footer.html">Footer</a></li>
+      <li><a href="signup.html">Sign up</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="forgot_password.html">Forgot password</a></li>
+      <li><a href="reset_password.html">Reset password</a></li>
+      <li><a href="banner.html">Banner</a></li>
+    </ul>
+  </div>
+  
+
+
+
+
+
+  
+</body>
+
+</html>
+
+
+
+      
